@@ -34,17 +34,23 @@ console.log(miNombre('Daniela'))
 // function test2() {
 //   console.log("Función test 2 ejecutada.");
 // }
-
-const test2 = () => console.log("Función test 2 ejecutada.");
-test2();
-
-
 // function test1(callback) {
 //   callback();
 // }	
 
 // const test1 = (callback) => callback();
 // test1(test2);
+
+const test2 = () => {
+  console.log("Función test 2 ejecutada.");
+};
+
+const test1 = (test2) => {
+  test2();
+};
+
+test1(test2);
+
 
 
 
